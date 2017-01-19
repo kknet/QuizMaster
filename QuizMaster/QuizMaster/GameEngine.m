@@ -6,9 +6,20 @@
 //  Copyright © 2017 Alique Williams. All rights reserved.
 //
 
+
+// #import <stdlib.h>
 #import "GameEngine.h"
 
+
+const NSInteger MAX_CHOICES = 4;
+
+
 @implementation GameEngine
+{
+    NSInteger _categoryId;
+    NSInteger _correctAnswer;
+    NSInteger _fourRandomIndex[MAX_]
+}
 
 // Private constants
 NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
@@ -48,5 +59,50 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
         [defaults synchronize];
     }
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Method to check if the answer is correct.
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+- (Boolean)isAnswerCorrect:(NSInteger)answer
+{
+    if (answer == _correctAnswer)
+    {
+        self.currentScore += self.questionValue;
+        return YES;
+    }
+    else
+    {
+        self.currentScore -= self.questionValue;
+        return NO;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Method to randomly pick a question.
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+- (void)loadQuestion
+{
+    const NSInteger MAX_CATEGORY = 10000;
+    const NSInteger MAX_QUESTION = 100;
+
+    NSString *choices[MAX_CHOICES];
+    
+#if 0
+    _categoryId = arc4random() % MAX_CATEGORY;
+    _correctAnswer = arc4random() % MAX_CHOICES;
+
+#endif
+    
+    self.answerChoice1 = choices[0];
+    self.answerChoice2 = choices[1];
+    self.answerChoice3 = choices[2];
+    self.answerChoice4 = choices[3];
+}
+
+
 
 @end
