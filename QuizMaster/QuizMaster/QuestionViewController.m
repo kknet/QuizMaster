@@ -34,4 +34,6 @@
 }
 */
 
+- (IBAction)endGame:(id)sender {
+}
 @end
