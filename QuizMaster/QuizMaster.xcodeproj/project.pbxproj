@@ -13,7 +13,6 @@
 		AA397DE71E313951001C26FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA397DE61E313951001C26FB /* Assets.xcassets */; };
 		AA397DEA1E313951001C26FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA397DE81E313951001C26FB /* LaunchScreen.storyboard */; };
 		AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF21E313DD3001C26FB /* AnswerGenerator.m */; };
-		AA397DF51E313FB1001C26FB /* jServices.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF41E313FB1001C26FB /* jServices.m */; };
 		C368DCCC1E315BF30048A187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C368DCCB1E315BF30048A187 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +30,6 @@
 		AA397DEB1E313951001C26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA397DF11E313DD3001C26FB /* AnswerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerGenerator.h; sourceTree = "<group>"; };
 		AA397DF21E313DD3001C26FB /* AnswerGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerGenerator.m; sourceTree = "<group>"; };
-		AA397DF41E313FB1001C26FB /* jServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jServices.m; sourceTree = "<group>"; };
-		AA397DF61E313FD1001C26FB /* jServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jServices.h; sourceTree = "<group>"; };
 		C368DCCB1E315BF30048A187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
