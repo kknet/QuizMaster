@@ -110,7 +110,7 @@
 				TargetAttributes = {
 					AA397DD61E313951001C26FB = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FFKQL694JY;
+						DevelopmentTeam = JJQX5AR27M;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -271,7 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FFKQL694JY;
+				DEVELOPMENT_TEAM = JJQX5AR27M;
 				INFOPLIST_FILE = QuizMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AliqueWIlliams.QuizMaster;
@@ -283,7 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FFKQL694JY;
+				DEVELOPMENT_TEAM = JJQX5AR27M;
 				INFOPLIST_FILE = QuizMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AliqueWIlliams.QuizMaster;
@@ -310,6 +310,7 @@
 				AA397DF01E313951001C26FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
