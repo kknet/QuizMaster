@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60D430CF1E313C28008E0CAE /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D430CE1E313C28008E0CAE /* GameEngine.m */; };
 		AA397DDC1E313951001C26FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DDB1E313951001C26FB /* main.m */; };
 		AA397DDF1E313951001C26FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DDE1E313951001C26FB /* AppDelegate.m */; };
 		AA397DE21E313951001C26FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DE11E313951001C26FB /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60D430CD1E313C28008E0CAE /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
+		60D430CE1E313C28008E0CAE /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngine.m; sourceTree = "<group>"; };
 		AA397DD71E313951001C26FB /* QuizMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA397DDB1E313951001C26FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA397DDD1E313951001C26FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				AA397DE81E313951001C26FB /* LaunchScreen.storyboard */,
 				AA397DEB1E313951001C26FB /* Info.plist */,
 				AA397DDA1E313951001C26FB /* Supporting Files */,
+				60D430CD1E313C28008E0CAE /* GameEngine.h */,
+				60D430CE1E313C28008E0CAE /* GameEngine.m */,
 			);
 			path = QuizMaster;
 			sourceTree = "<group>";
@@ -144,7 +149,7 @@
 				TargetAttributes = {
 					AA397DD61E313951001C26FB = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FFKQL694JY;
+						DevelopmentTeam = JJQX5AR27M;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -307,8 +312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FFKQL694JY;
+				DEVELOPMENT_TEAM = JJQX5AR27M;
 				INFOPLIST_FILE = QuizMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AliqueWIlliams.QuizMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -319,8 +325,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FFKQL694JY;
+				DEVELOPMENT_TEAM = JJQX5AR27M;
 				INFOPLIST_FILE = QuizMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AliqueWIlliams.QuizMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +353,7 @@
 				AA397DF01E313951001C26FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
