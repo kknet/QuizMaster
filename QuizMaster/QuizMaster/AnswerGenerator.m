@@ -1,5 +1,4 @@
 #import "AnswerGenerator.h"
-#import "jServices.h"
 
 @protocol AnswerGeneratorDelegate <NSObject>
 
@@ -10,16 +9,27 @@
 
 @interface AnswerGenerator ()
 
-@property (weak, nonatomic) jServices *web;
-@property(strong, nonatomic) id <AnswerGeneratorDelegate> delegate;
+@property (strong, nonatomic) jServices *web;
 
 @end
 
 @implementation AnswerGenerator
 
--(void)generationRandomQuestions {
-    self.web.GetRandomQuery;
+-(id)init
+{
+    if (self = [super init])
+    {
+        self.web.delegate = self;
+    }
+    return self;
 }
 
+- (void)generationRandomQuestion: (NSInteger *)fromCategory {
+    [self.web GetRandomQuery:fromCategory];
+}
+
+- (void)didFinishLoadingJSON:(NSMutableDictionary *)questionAndAnwers {
+    
+}
 
 @end

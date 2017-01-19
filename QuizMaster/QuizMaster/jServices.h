@@ -1,7 +1,16 @@
 #import <Foundation/Foundation.h>
 
+@class jServices;
+@protocol jServicesDelegate <NSObject>
+
+- (void)didFinishLoadingJSON:(NSDictionary *)questionAndAnwers;
+
+@end
+
 @interface jServices: NSObject
 
-- (void)GetRandomQuery;
+@property (strong, nonatomic) id<jServicesDelegate> delegate;
+
+- (void)GetRandomQuery:(NSInteger *) category;
 
 @end

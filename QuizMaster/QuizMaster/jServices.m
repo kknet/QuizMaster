@@ -3,15 +3,13 @@
 
 @interface jServices ()
 
-@property (weak, nonatomic) AnswerGenerator *AnswerGenerator;
-//@property (strong, nonatomic) AnswerGeneratorDelegate *delegate;
-
 @end
 
 @implementation jServices
 
-- (void)GetRandomQuery {
-    NSURL *URL = [NSURL URLWithString:@"http://jservice.io/api/random?count=100"];
+- (void)GetRandomQuery:(NSInteger *) category {
+    NSString *string = [[NSString alloc] initWithFormat:@"http://jservice.io/api/category?id=%@", category];
+    NSURL *URL = [NSURL URLWithString:string];
     NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:URL];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     request.HTTPMethod = @"GET";
@@ -20,7 +18,7 @@
                 completionHandler:^(NSData * data, NSURLResponse * response, NSError * error) {
                     NSDictionary * childData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        //TODO:
+                        [self.delegate didFinishLoadingJSON:childData];
                     });
                 }] resume];
 }

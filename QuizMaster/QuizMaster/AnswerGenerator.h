@@ -1,7 +1,8 @@
 #import <Foundation/Foundation.h>
+#import "jServices.h"
 
-@interface AnswerGenerator: NSObject
+@interface AnswerGenerator: NSObject <jServicesDelegate>
 
--(void)generationRandomQuestions;
+- (void)generationRandomQuestion: (NSInteger *)fromCategory;
 
 @end
