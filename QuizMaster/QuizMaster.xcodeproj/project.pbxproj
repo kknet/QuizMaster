@@ -13,8 +13,8 @@
 		AA397DE71E313951001C26FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA397DE61E313951001C26FB /* Assets.xcassets */; };
 		AA397DEA1E313951001C26FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA397DE81E313951001C26FB /* LaunchScreen.storyboard */; };
 		AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF21E313DD3001C26FB /* AnswerGenerator.m */; };
-		C368DCCC1E315BF30048A187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C368DCCB1E315BF30048A187 /* Main.storyboard */; };
 		C368DCCF1E31688F0048A187 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C368DCCE1E31688F0048A187 /* QuestionViewController.m */; };
+		C368DCD11E316CA80048A187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C368DCD01E316CA80048A187 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		AA397DEB1E313951001C26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA397DF11E313DD3001C26FB /* AnswerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerGenerator.h; sourceTree = "<group>"; };
 		AA397DF21E313DD3001C26FB /* AnswerGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerGenerator.m; sourceTree = "<group>"; };
-		C368DCCB1E315BF30048A187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		C368DCCD1E31688F0048A187 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		C368DCCE1E31688F0048A187 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		C368DCD01E316CA80048A187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,6 @@
 				AA397DE61E313951001C26FB /* Assets.xcassets */,
 				AA397DE81E313951001C26FB /* LaunchScreen.storyboard */,
 				AA397DEB1E313951001C26FB /* Info.plist */,
-				C368DCCB1E315BF30048A187 /* Main.storyboard */,
 				AA397DDA1E313951001C26FB /* Supporting Files */,
 			);
 			path = QuizMaster;
@@ -111,6 +110,7 @@
 			children = (
 				60D430CD1E313C28008E0CAE /* GameEngine.h */,
 				60D430CE1E313C28008E0CAE /* GameEngine.m */,
+				C368DCD01E316CA80048A187 /* Main.storyboard */,
 				AA397DF11E313DD3001C26FB /* AnswerGenerator.h */,
 				AA397DF21E313DD3001C26FB /* AnswerGenerator.m */,
 			);
@@ -176,7 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C368DCCC1E315BF30048A187 /* Main.storyboard in Resources */,
+				C368DCD11E316CA80048A187 /* Main.storyboard in Resources */,
 				AA397DEA1E313951001C26FB /* LaunchScreen.storyboard in Resources */,
 				AA397DE71E313951001C26FB /* Assets.xcassets in Resources */,
 			);
