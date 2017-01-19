@@ -335,22 +335,24 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDV-oD-lo3" userLabel="endGameButton">
                                 <rect key="frame" x="86" y="623.5" width="203" height="35.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFk-En-PkF">
-                                        <rect key="frame" x="42" y="0.0" width="120" height="35.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="WFk-En-PkF" secondAttribute="height" multiplier="121:36" id="0ll-9j-Slw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-Q3-BCi">
+                                        <rect key="frame" x="8" y="8" width="187" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="End Game">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="endGame:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="TeN-6v-fxd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.4941176471" green="0.098039215690000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="EDV-oD-lo3" secondAttribute="height" multiplier="205:36" id="3Kh-CA-xam"/>
-                                    <constraint firstAttribute="bottom" secondItem="WFk-En-PkF" secondAttribute="bottom" id="VeI-Ga-bIU"/>
-                                    <constraint firstItem="WFk-En-PkF" firstAttribute="centerX" secondItem="EDV-oD-lo3" secondAttribute="centerX" id="ckr-vr-ebe"/>
-                                    <constraint firstItem="WFk-En-PkF" firstAttribute="top" secondItem="EDV-oD-lo3" secondAttribute="top" id="vCU-C5-II0"/>
+                                    <constraint firstItem="7Iq-Q3-BCi" firstAttribute="top" secondItem="EDV-oD-lo3" secondAttribute="top" constant="8" id="QNK-QG-fsK"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Iq-Q3-BCi" secondAttribute="bottom" constant="8" id="TdE-s9-9h4"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Iq-Q3-BCi" secondAttribute="trailing" constant="8" id="Wq8-KH-LFu"/>
+                                    <constraint firstItem="7Iq-Q3-BCi" firstAttribute="leading" secondItem="EDV-oD-lo3" secondAttribute="leading" constant="8" id="m4x-L4-kra"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q79-R9-JhH" userLabel="topBarView">
