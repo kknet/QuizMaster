@@ -6,9 +6,6 @@
 
 @implementation AnswerGenerator
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
 
 
 @end
