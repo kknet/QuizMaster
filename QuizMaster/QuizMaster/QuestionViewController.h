@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *heart1;
 @property (weak, nonatomic) IBOutlet UIImageView *heart2;
 @property (weak, nonatomic) IBOutlet UIImageView *heart3;
+@property (weak, nonatomic) IBOutlet UILabel *questionValueLabel;
 
 - (IBAction)endGame:(id)sender;
 
