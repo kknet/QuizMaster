@@ -6,9 +6,24 @@
 //  Copyright © 2017 Alique Williams. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 
-@interface GameEngine : NSObject
+#import <Foundation/Foundation.h>
+#import "AnswerGenerator.h"
+
+
+@class GameEngine;
+
+
+@protocol GameEngineDelegate <NSObject>
+
+- (void)didFinishLoadingQuestion;
+
+@end
+
+
+@interface GameEngine : NSObject<AnswerGeneratorDelegate>
+
+@property (strong, nonatomic) id<GameEngineDelegate> delegate;
 
 @property (nonatomic) NSInteger currentScore;
 @property (nonatomic) NSInteger highScore;
