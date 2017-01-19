@@ -15,6 +15,7 @@
 		AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF21E313DD3001C26FB /* AnswerGenerator.m */; };
 		C368DCCF1E31688F0048A187 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C368DCCE1E31688F0048A187 /* QuestionViewController.m */; };
 		C368DCD11E316CA80048A187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C368DCD01E316CA80048A187 /* Main.storyboard */; };
+		C368DCD31E31789E0048A187 /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D430CE1E313C28008E0CAE /* GameEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C368DCD31E31789E0048A187 /* GameEngine.m in Sources */,
 				AA397DE21E313951001C26FB /* ViewController.m in Sources */,
 				C368DCCF1E31688F0048A187 /* QuestionViewController.m in Sources */,
 				AA397DDF1E313951001C26FB /* AppDelegate.m in Sources */,
