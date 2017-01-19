@@ -33,11 +33,13 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
 {
     if (self = [super init])
     {
+#if 0
         // Get the stored data
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         
         // Get the saved color settings
         self.highScore = [defaults integerForKey:NSDEFAULT_KEY_SCORE];
+#endif
         
         _ag.delegate = self;
     }

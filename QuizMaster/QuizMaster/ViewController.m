@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+
+#define NSDEFAULT_KEY_SCORE     @"QuizMasterHighScore"
+
+
 @interface ViewController ()
 
 //@property (strong, nonatomic)
@@ -18,6 +22,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // Get the stored high score
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger savedScore = [defaults integerForKey:NSDEFAULT_KEY_SCORE];
+    
+    // Format the high score
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    NSString *groupingSeparator = [[NSLocale currentLocale] objectForKey:NSLocaleGroupingSeparator];
+    [formatter setGroupingSeparator:groupingSeparator];
+    [formatter setGroupingSize:3];
+    [formatter setUsesGroupingSeparator:YES];
+    [formatter setMaximumFractionDigits:0];
+    NSString *formattedString = [formatter stringFromNumber:[NSNumber numberWithInteger:savedScore]];
+                                 
+    // Display the high score
+    self.highScoreDisplay.text = formattedString;
 }
 
 - (IBAction)startGame:(UIButton *)sender {
