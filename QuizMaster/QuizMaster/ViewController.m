@@ -10,13 +10,22 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) GameEngine *gameEngine;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+    }
+    return self;
 }
 
 

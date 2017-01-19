@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameEngine.h"
 
 @interface ViewController : UIViewController
 

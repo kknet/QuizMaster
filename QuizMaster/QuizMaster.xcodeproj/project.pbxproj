@@ -68,6 +68,7 @@
 			children = (
 				AA397DF71E314011001C26FB /* Application */,
 				AA397DE61E313951001C26FB /* Assets.xcassets */,
+				C368DCD01E316CA80048A187 /* Main.storyboard */,
 				AA397DE81E313951001C26FB /* LaunchScreen.storyboard */,
 				AA397DEB1E313951001C26FB /* Info.plist */,
 				AA397DDA1E313951001C26FB /* Supporting Files */,
@@ -110,7 +111,6 @@
 			children = (
 				60D430CD1E313C28008E0CAE /* GameEngine.h */,
 				60D430CE1E313C28008E0CAE /* GameEngine.m */,
-				C368DCD01E316CA80048A187 /* Main.storyboard */,
 				AA397DF11E313DD3001C26FB /* AnswerGenerator.h */,
 				AA397DF21E313DD3001C26FB /* AnswerGenerator.m */,
 			);
