@@ -37,7 +37,7 @@
 @property (nonatomic) NSInteger questionValue;
 
 - (void) loadQuestion;
-- (void) isAnswerCorrect:(NSInteger)answer;
+- (Boolean) isAnswerCorrect:(NSInteger)answer;
 - (void) saveScore;
 
 @end

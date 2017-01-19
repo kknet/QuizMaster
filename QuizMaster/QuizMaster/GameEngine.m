@@ -99,6 +99,8 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //
+//  Method called when jService API finishes.
+//
 //////////////////////////////////////////////////////////////////////////////////////////
 - (void)didFinishLoadingJSON:(NSDictionary *)questionAndAnwers
 {
@@ -109,7 +111,7 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
     
     //
     self.categoryName = questionAndAnwers[@"title"];
-    NSDictionary **questions = questionAndAnwers[@"clues"];
+    NSArray *questions = questionAndAnwers[@"clues"];
     NSDictionary *clue;
 
     // Generate numbers to select 4 random questions
