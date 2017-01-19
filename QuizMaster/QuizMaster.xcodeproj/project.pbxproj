@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60D430D01E3178B7008E0CAE /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D430CE1E313C28008E0CAE /* GameEngine.m */; };
+		002555C41E31833C00AC586A /* audioOFF-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 002555C21E31833C00AC586A /* audioOFF-icon.png */; };
+		002555C51E31833C00AC586A /* audioON-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 002555C31E31833C00AC586A /* audioON-icon.png */; };
+		002555C81E31835800AC586A /* jeopardyBkg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 002555C71E31835800AC586A /* jeopardyBkg2.jpg */; };
+		002555CB1E31836800AC586A /* JeopardyTheme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002555C91E31836800AC586A /* JeopardyTheme.mp3 */; };
+		002555CC1E31836800AC586A /* JeopardyThinkMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002555CA1E31836800AC586A /* JeopardyThinkMusic.mp3 */; };
 		AA397DDC1E313951001C26FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DDB1E313951001C26FB /* main.m */; };
 		AA397DDF1E313951001C26FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DDE1E313951001C26FB /* AppDelegate.m */; };
 		AA397DE21E313951001C26FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DE11E313951001C26FB /* ViewController.m */; };
@@ -16,9 +20,15 @@
 		AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF21E313DD3001C26FB /* AnswerGenerator.m */; };
 		C368DCCF1E31688F0048A187 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C368DCCE1E31688F0048A187 /* QuestionViewController.m */; };
 		C368DCD11E316CA80048A187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C368DCD01E316CA80048A187 /* Main.storyboard */; };
+		C368DCD31E31789E0048A187 /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D430CE1E313C28008E0CAE /* GameEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002555C21E31833C00AC586A /* audioOFF-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audioOFF-icon.png"; sourceTree = "<group>"; };
+		002555C31E31833C00AC586A /* audioON-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audioON-icon.png"; sourceTree = "<group>"; };
+		002555C71E31835800AC586A /* jeopardyBkg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeopardyBkg2.jpg; sourceTree = "<group>"; };
+		002555C91E31836800AC586A /* JeopardyTheme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JeopardyTheme.mp3; sourceTree = "<group>"; };
+		002555CA1E31836800AC586A /* JeopardyThinkMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JeopardyThinkMusic.mp3; sourceTree = "<group>"; };
 		60D430CD1E313C28008E0CAE /* GameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngine.h; sourceTree = "<group>"; };
 		60D430CE1E313C28008E0CAE /* GameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngine.m; sourceTree = "<group>"; };
 		AA397DD71E313951001C26FB /* QuizMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +58,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002555C61E31834200AC586A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				002555C71E31835800AC586A /* jeopardyBkg2.jpg */,
+				002555C21E31833C00AC586A /* audioOFF-icon.png */,
+				002555C31E31833C00AC586A /* audioON-icon.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		002555CD1E31837A00AC586A /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				002555C91E31836800AC586A /* JeopardyTheme.mp3 */,
+				002555CA1E31836800AC586A /* JeopardyThinkMusic.mp3 */,
+			);
+			name = audio;
+			sourceTree = "<group>";
+		};
 		AA397DCE1E313951001C26FB = {
 			isa = PBXGroup;
 			children = (
 				AA397DD91E313951001C26FB /* QuizMaster */,
 				AA397DD81E313951001C26FB /* Products */,
+				002555CD1E31837A00AC586A /* audio */,
+				002555C61E31834200AC586A /* images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,7 +180,7 @@
 				TargetAttributes = {
 					AA397DD61E313951001C26FB = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FFKQL694JY;
+						DevelopmentTeam = 6F8P242K3J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -178,8 +209,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C368DCD11E316CA80048A187 /* Main.storyboard in Resources */,
+				002555CC1E31836800AC586A /* JeopardyThinkMusic.mp3 in Resources */,
+				002555C81E31835800AC586A /* jeopardyBkg2.jpg in Resources */,
 				AA397DEA1E313951001C26FB /* LaunchScreen.storyboard in Resources */,
 				AA397DE71E313951001C26FB /* Assets.xcassets in Resources */,
+				002555C51E31833C00AC586A /* audioON-icon.png in Resources */,
+				002555CB1E31836800AC586A /* JeopardyTheme.mp3 in Resources */,
+				002555C41E31833C00AC586A /* audioOFF-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60D430D01E3178B7008E0CAE /* GameEngine.m in Sources */,
+				C368DCD31E31789E0048A187 /* GameEngine.m in Sources */,
 				AA397DE21E313951001C26FB /* ViewController.m in Sources */,
 				C368DCCF1E31688F0048A187 /* QuestionViewController.m in Sources */,
 				AA397DDF1E313951001C26FB /* AppDelegate.m in Sources */,
@@ -305,7 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FFKQL694JY;
+				DEVELOPMENT_TEAM = 6F8P242K3J;
 				INFOPLIST_FILE = QuizMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -318,7 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FFKQL694JY;
+				DEVELOPMENT_TEAM = 6F8P242K3J;
 				INFOPLIST_FILE = QuizMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
