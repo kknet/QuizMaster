@@ -10,13 +10,17 @@
 
 @interface QuestionViewController ()
 
+@property (strong, nonatomic) GameEngine *gameEngine;
+
 @end
 
 @implementation QuestionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.gameEngine = [[GameEngine alloc] init];
+    self.gameEngine.delegate = self;
+    [self.gameEngine loadQuestion];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,15 +28,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)didFinishLoadingQuestion {
+    self.currentScore.text = [NSString stringWithFormat:@"$%ld", self.gameEngine.questionValue];
 }
-*/
 
 - (IBAction)endGame:(id)sender {
 }

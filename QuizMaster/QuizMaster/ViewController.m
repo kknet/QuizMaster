@@ -10,16 +10,21 @@
 
 @interface ViewController ()
 
+//@property (strong, nonatomic)
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (IBAction)startGame:(UIButton *)sender {
+    UIStoryboard *storyboard = self.storyboard;
+    UIViewController *questionNAnswers = [storyboard instantiateViewControllerWithIdentifier:@"QuestionViewController"];
+    [self presentViewController:questionNAnswers animated:true completion:nil];
 }
+
 
 @end
