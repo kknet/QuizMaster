@@ -28,5 +28,7 @@
     return self;
 }
 
+- (IBAction)startGame:(UIButton *)sender {
+}
 
 @end

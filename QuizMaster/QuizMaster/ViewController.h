@@ -12,7 +12,7 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *highScoreDisplay;
-@property (weak, nonatomic) IBOutlet UIButton *startGame;
+
 
 @end
 
