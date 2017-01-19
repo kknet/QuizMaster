@@ -2,4 +2,6 @@
 
 @interface AnswerGenerator: NSObject
 
+-(void)generationRandomQuestions;
+
 @end

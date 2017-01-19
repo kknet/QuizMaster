@@ -14,6 +14,7 @@
 		AA397DE71E313951001C26FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA397DE61E313951001C26FB /* Assets.xcassets */; };
 		AA397DEA1E313951001C26FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA397DE81E313951001C26FB /* LaunchScreen.storyboard */; };
 		AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF21E313DD3001C26FB /* AnswerGenerator.m */; };
+		AA397DF51E313FB1001C26FB /* jServices.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF41E313FB1001C26FB /* jServices.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		AA397DEB1E313951001C26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA397DF11E313DD3001C26FB /* AnswerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerGenerator.h; sourceTree = "<group>"; };
 		AA397DF21E313DD3001C26FB /* AnswerGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerGenerator.m; sourceTree = "<group>"; };
+		AA397DF41E313FB1001C26FB /* jServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jServices.m; sourceTree = "<group>"; };
+		AA397DF61E313FD1001C26FB /* jServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jServices.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +64,7 @@
 		AA397DD91E313951001C26FB /* QuizMaster */ = {
 			isa = PBXGroup;
 			children = (
-				AA397DDD1E313951001C26FB /* AppDelegate.h */,
-				AA397DDE1E313951001C26FB /* AppDelegate.m */,
-				AA397DE01E313951001C26FB /* ViewController.h */,
-				AA397DE11E313951001C26FB /* ViewController.m */,
-				AA397DF11E313DD3001C26FB /* AnswerGenerator.h */,
-				AA397DF21E313DD3001C26FB /* AnswerGenerator.m */,
+				AA397DF71E314011001C26FB /* Application */,
 				AA397DE31E313951001C26FB /* Main.storyboard */,
 				AA397DE61E313951001C26FB /* Assets.xcassets */,
 				AA397DE81E313951001C26FB /* LaunchScreen.storyboard */,
@@ -82,6 +80,37 @@
 				AA397DDB1E313951001C26FB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA397DF71E314011001C26FB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AA397DF81E31401A001C26FB /* Main */,
+				AA397DE01E313951001C26FB /* ViewController.h */,
+				AA397DE11E313951001C26FB /* ViewController.m */,
+				AA397DF91E314027001C26FB /* Common */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		AA397DF81E31401A001C26FB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA397DDD1E313951001C26FB /* AppDelegate.h */,
+				AA397DDE1E313951001C26FB /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		AA397DF91E314027001C26FB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AA397DF11E313DD3001C26FB /* AnswerGenerator.h */,
+				AA397DF21E313DD3001C26FB /* AnswerGenerator.m */,
+				AA397DF61E313FD1001C26FB /* jServices.h */,
+				AA397DF41E313FB1001C26FB /* jServices.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +189,7 @@
 				AA397DDF1E313951001C26FB /* AppDelegate.m in Sources */,
 				AA397DDC1E313951001C26FB /* main.m in Sources */,
 				AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */,
+				AA397DF51E313FB1001C26FB /* jServices.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
