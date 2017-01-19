@@ -14,6 +14,7 @@
 		AA397DEA1E313951001C26FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA397DE81E313951001C26FB /* LaunchScreen.storyboard */; };
 		AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF21E313DD3001C26FB /* AnswerGenerator.m */; };
 		C368DCCC1E315BF30048A187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C368DCCB1E315BF30048A187 /* Main.storyboard */; };
+		C368DCCF1E31688F0048A187 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C368DCCE1E31688F0048A187 /* QuestionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		AA397DF11E313DD3001C26FB /* AnswerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerGenerator.h; sourceTree = "<group>"; };
 		AA397DF21E313DD3001C26FB /* AnswerGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerGenerator.m; sourceTree = "<group>"; };
 		C368DCCB1E315BF30048A187 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		C368DCCD1E31688F0048A187 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		C368DCCE1E31688F0048A187 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				AA397DF81E31401A001C26FB /* Main */,
 				AA397DE01E313951001C26FB /* ViewController.h */,
 				AA397DE11E313951001C26FB /* ViewController.m */,
+				C368DCCD1E31688F0048A187 /* QuestionViewController.h */,
+				C368DCCE1E31688F0048A187 /* QuestionViewController.m */,
 				AA397DF91E314027001C26FB /* Common */,
 			);
 			name = Application;
@@ -185,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA397DE21E313951001C26FB /* ViewController.m in Sources */,
+				C368DCCF1E31688F0048A187 /* QuestionViewController.m in Sources */,
 				AA397DDF1E313951001C26FB /* AppDelegate.m in Sources */,
 				AA397DDC1E313951001C26FB /* main.m in Sources */,
 				AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */,
