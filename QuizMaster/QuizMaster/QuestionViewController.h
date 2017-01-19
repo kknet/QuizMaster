@@ -18,6 +18,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *answer2;
 @property (weak, nonatomic) IBOutlet UILabel *answer3;
 @property (weak, nonatomic) IBOutlet UILabel *answer4;
-@property (weak, nonatomic) IBOutlet UIView *endGame;
+@property (weak, nonatomic) IBOutlet UIImageView *heart1;
+@property (weak, nonatomic) IBOutlet UIImageView *heart2;
+@property (weak, nonatomic) IBOutlet UIImageView *heart3;
+
+- (IBAction)endGame:(id)sender;
 
 @end

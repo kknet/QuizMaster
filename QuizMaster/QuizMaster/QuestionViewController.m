@@ -32,4 +32,6 @@
     self.currentScore.text = [NSString stringWithFormat:@"$%ld", self.gameEngine.questionValue];
 }
 
+- (IBAction)endGame:(id)sender {
+}
 @end
