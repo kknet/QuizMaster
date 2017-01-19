@@ -8,19 +8,24 @@
 
 #import "QuestionViewController.h"
 
+#if 0
 @interface QuestionViewController ()
 
 @property (strong, nonatomic) GameEngine *gameEngine;
 
 @end
+#endif
 
 @implementation QuestionViewController
+{
+    GameEngine *_gameEngine;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.gameEngine = [[GameEngine alloc] init];
-    self.gameEngine.delegate = self;
-    [self.gameEngine loadQuestion];
+    _gameEngine = [[GameEngine alloc] init];
+    _gameEngine.delegate = self;
+    [_gameEngine loadQuestion];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,7 +34,7 @@
 }
 
 -(void)didFinishLoadingQuestion {
-    self.currentScore.text = [NSString stringWithFormat:@"$%ld", self.gameEngine.questionValue];
+    self.currentScore.text = [NSString stringWithFormat:@"$%ld", (long)_gameEngine.questionValue];
 }
 
 - (IBAction)endGame:(id)sender {

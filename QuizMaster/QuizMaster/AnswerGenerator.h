@@ -10,6 +10,6 @@
 @interface AnswerGenerator: NSObject
 
 @property (strong, nonatomic) id<AnswerGeneratorDelegate> delegate;
-- (void)GetRandomQuery:(id) category;
+- (void)GetRandomQuery:(NSInteger) category;
 
 @end

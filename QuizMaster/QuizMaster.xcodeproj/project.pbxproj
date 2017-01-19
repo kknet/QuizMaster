@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60D430D01E3178B7008E0CAE /* GameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D430CE1E313C28008E0CAE /* GameEngine.m */; };
 		AA397DDC1E313951001C26FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DDB1E313951001C26FB /* main.m */; };
 		AA397DDF1E313951001C26FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DDE1E313951001C26FB /* AppDelegate.m */; };
 		AA397DE21E313951001C26FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DE11E313951001C26FB /* ViewController.m */; };
@@ -189,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D430D01E3178B7008E0CAE /* GameEngine.m in Sources */,
 				AA397DE21E313951001C26FB /* ViewController.m in Sources */,
 				C368DCCF1E31688F0048A187 /* QuestionViewController.m in Sources */,
 				AA397DDF1E313951001C26FB /* AppDelegate.m in Sources */,
