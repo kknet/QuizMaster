@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameEngine.h"
 
-@interface QuestionViewController : UIViewController
+@interface QuestionViewController : UIViewController <GameEngineDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *currentScore;
 @property (weak, nonatomic) IBOutlet UILabel *category;
 @property (weak, nonatomic) IBOutlet UILabel *question;

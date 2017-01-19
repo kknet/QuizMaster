@@ -69,7 +69,7 @@
                                         </state>
                                         <connections>
                                             <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0U-MC-4VJ"/>
-                                            <segue destination="ZmG-gp-zYb" kind="show" id="hH2-hM-LHz"/>
+                                            <segue destination="ZmG-gp-zYb" kind="show" identifier="start" id="hH2-hM-LHz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -128,7 +128,7 @@
         <!--Question View Controller-->
         <scene sceneID="y51-Yk-QUA">
             <objects>
-                <viewController id="ZmG-gp-zYb" customClass="QuestionViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZmG-gp-zYb" customClass="QuestionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K8A-lx-dui"/>
                         <viewControllerLayoutGuide type="bottom" id="44G-xy-p3l"/>
@@ -260,7 +260,7 @@
                                 <rect key="frame" x="86" y="623.5" width="203" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFk-En-PkF">
-                                        <rect key="frame" x="41.5" y="0.0" width="120" height="35.5"/>
+                                        <rect key="frame" x="42" y="0.0" width="120" height="35.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WFk-En-PkF" secondAttribute="height" multiplier="121:36" id="0ll-9j-Slw"/>
                                         </constraints>
@@ -290,7 +290,7 @@
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart2" translatesAutoresizingMaskIntoConstraints="NO" id="jH5-MV-4o6">
-                                                <rect key="frame" x="36.5" y="10" width="25" height="25"/>
+                                                <rect key="frame" x="37" y="10" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jH5-MV-4o6" secondAttribute="height" multiplier="1:1" id="dxG-kP-3ly"/>
                                                 </constraints>

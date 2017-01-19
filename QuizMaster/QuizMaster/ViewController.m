@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 
-@property (strong, nonatomic) GameEngine *gameEngine;
+//@property (strong, nonatomic)
 
 @end
 
@@ -20,15 +20,11 @@
     [super viewDidLoad];
 }
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-    }
-    return self;
+- (IBAction)startGame:(UIButton *)sender {
+    UIStoryboard *storyboard = self.storyboard;
+    UIViewController *questionNAnswers = [storyboard instantiateViewControllerWithIdentifier:@"QuestionViewController"];
+    [self presentViewController:questionNAnswers animated:true completion:nil];
 }
 
-- (IBAction)startGame:(UIButton *)sender {
-}
 
 @end
