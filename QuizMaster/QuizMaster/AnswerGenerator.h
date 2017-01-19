@@ -1,8 +1,15 @@
 #import <Foundation/Foundation.h>
-#import "jServices.h"
 
-@interface AnswerGenerator: NSObject <jServicesDelegate>
+@class AnswerGenerator;
+@protocol AnswerGeneratorDelegate <NSObject>
 
-- (void)generationRandomQuestion: (NSInteger *)fromCategory;
+- (void)didFinishLoadingJSON:(NSDictionary *)questionAndAnwers;
+
+@end
+
+@interface AnswerGenerator: NSObject
+
+@property (strong, nonatomic) id<AnswerGeneratorDelegate> delegate;
+- (void)GetRandomQuery:(id) category;
 
 @end

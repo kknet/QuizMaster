@@ -14,7 +14,6 @@
 		AA397DE71E313951001C26FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA397DE61E313951001C26FB /* Assets.xcassets */; };
 		AA397DEA1E313951001C26FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA397DE81E313951001C26FB /* LaunchScreen.storyboard */; };
 		AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF21E313DD3001C26FB /* AnswerGenerator.m */; };
-		AA397DF51E313FB1001C26FB /* jServices.m in Sources */ = {isa = PBXBuildFile; fileRef = AA397DF41E313FB1001C26FB /* jServices.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +31,6 @@
 		AA397DEB1E313951001C26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA397DF11E313DD3001C26FB /* AnswerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerGenerator.h; sourceTree = "<group>"; };
 		AA397DF21E313DD3001C26FB /* AnswerGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerGenerator.m; sourceTree = "<group>"; };
-		AA397DF41E313FB1001C26FB /* jServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jServices.m; sourceTree = "<group>"; };
-		AA397DF61E313FD1001C26FB /* jServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jServices.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +108,6 @@
 				60D430CE1E313C28008E0CAE /* GameEngine.m */,
 				AA397DF11E313DD3001C26FB /* AnswerGenerator.h */,
 				AA397DF21E313DD3001C26FB /* AnswerGenerator.m */,
-				AA397DF61E313FD1001C26FB /* jServices.h */,
-				AA397DF41E313FB1001C26FB /* jServices.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -148,7 +143,7 @@
 				TargetAttributes = {
 					AA397DD61E313951001C26FB = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = JJQX5AR27M;
+						DevelopmentTeam = FFKQL694JY;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -193,7 +188,6 @@
 				AA397DDF1E313951001C26FB /* AppDelegate.m in Sources */,
 				AA397DDC1E313951001C26FB /* main.m in Sources */,
 				AA397DF31E313DD3001C26FB /* AnswerGenerator.m in Sources */,
-				AA397DF51E313FB1001C26FB /* jServices.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJQX5AR27M;
+				DEVELOPMENT_TEAM = FFKQL694JY;
 				INFOPLIST_FILE = QuizMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -324,7 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJQX5AR27M;
+				DEVELOPMENT_TEAM = FFKQL694JY;
 				INFOPLIST_FILE = QuizMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
