@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "GameEngine.h"
 #import "QuestionViewController.h"
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface ViewController : UIViewController
 
