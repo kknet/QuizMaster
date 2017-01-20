@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "GameEngine.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface QuestionViewController : UIViewController <GameEngineDelegate>
+
+@property (strong) AVAudioPlayer *audioPlayer;
+@property (strong, nonatomic) NSString *soundFilePath;
+@property BOOL soundON;
+
+@property (weak, nonatomic) IBOutlet UIButton *audioButtonTapped;
 
 @property (weak, nonatomic) IBOutlet UILabel *currentScore;
 @property (weak, nonatomic) IBOutlet UILabel *category;

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -117,7 +117,7 @@
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart2" translatesAutoresizingMaskIntoConstraints="NO" id="jH5-MV-4o6">
-                                                <rect key="frame" x="36.5" y="10" width="25" height="25"/>
+                                                <rect key="frame" x="37" y="10" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jH5-MV-4o6" secondAttribute="height" multiplier="1:1" id="dxG-kP-3ly"/>
                                                 </constraints>
@@ -143,12 +143,6 @@
                                             <constraint firstItem="Jq8-zw-IRq" firstAttribute="top" secondItem="yVN-rh-DLq" secondAttribute="top" constant="10" id="z8g-qW-X6Y"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audioON-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-MM-sEe" userLabel="volumeButton">
-                                        <rect key="frame" x="8" y="18" width="27" height="27"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="ubz-MM-sEe" secondAttribute="height" multiplier="1:1" id="9cd-fa-dKG"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlc-SN-1pU" userLabel="currentScore">
                                         <rect key="frame" x="137" y="20" width="102" height="34"/>
                                         <constraints>
@@ -158,18 +152,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTg-g2-Cpi">
+                                        <rect key="frame" x="3" y="6" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="audioON-icon.png"/>
+                                        <connections>
+                                            <action selector="audioButtonTapped:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="dLD-9F-txY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.49411764705882355" green="0.098039215686274508" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yVN-rh-DLq" secondAttribute="trailing" id="7FD-cy-Vja"/>
                                     <constraint firstAttribute="bottom" secondItem="yVN-rh-DLq" secondAttribute="bottom" id="8f9-s1-J93"/>
                                     <constraint firstItem="dlc-SN-1pU" firstAttribute="top" secondItem="Q79-R9-JhH" secondAttribute="top" constant="20" id="DN4-hk-QFi"/>
-                                    <constraint firstItem="ubz-MM-sEe" firstAttribute="leading" secondItem="Q79-R9-JhH" secondAttribute="leading" constant="8" id="Fpu-gJ-f1Q"/>
                                     <constraint firstItem="yVN-rh-DLq" firstAttribute="top" secondItem="Q79-R9-JhH" secondAttribute="top" constant="11" id="PwD-A8-Cfm"/>
                                     <constraint firstAttribute="width" secondItem="Q79-R9-JhH" secondAttribute="height" multiplier="375:56" id="UU7-4i-Lnm"/>
                                     <constraint firstItem="dlc-SN-1pU" firstAttribute="centerX" secondItem="Q79-R9-JhH" secondAttribute="centerX" id="wEu-0u-OBh"/>
-                                    <constraint firstItem="ubz-MM-sEe" firstAttribute="top" secondItem="Q79-R9-JhH" secondAttribute="top" constant="18" id="wlV-ol-eBj"/>
-                                    <constraint firstAttribute="bottom" secondItem="ubz-MM-sEe" secondAttribute="bottom" constant="11" id="yzh-rl-Jav"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbw-9V-Riv" userLabel="categoryView">
@@ -226,7 +225,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTD-gh-CQq" userLabel="answer2View">
-                                        <rect key="frame" x="0.0" y="91.5" width="343" height="51"/>
+                                        <rect key="frame" x="0.0" y="91" width="343" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Answer 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJn-5h-ODt">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
@@ -245,7 +244,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjG-Qz-wkY" userLabel="answer3View">
-                                        <rect key="frame" x="0.0" y="163" width="343" height="51"/>
+                                        <rect key="frame" x="0.0" y="162" width="343" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Answer 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jht-Ph-yFW">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
@@ -264,7 +263,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvH-Li-doB" userLabel="answer4View">
-                                        <rect key="frame" x="0.0" y="234.5" width="343" height="51"/>
+                                        <rect key="frame" x="0.0" y="233" width="343" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Answer 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUf-C7-z6T">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
@@ -311,7 +310,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-Q3-BCi">
-                                <rect key="frame" x="94" y="608.5" width="187" height="35"/>
+                                <rect key="frame" x="94" y="609" width="187" height="35"/>
                                 <color key="backgroundColor" red="0.4941176471" green="0.098039215690000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="End Game">
@@ -354,6 +353,7 @@
                         <outlet property="answer2" destination="MJn-5h-ODt" id="gt0-WY-fR7"/>
                         <outlet property="answer3" destination="jht-Ph-yFW" id="CgI-Sa-IyU"/>
                         <outlet property="answer4" destination="IUf-C7-z6T" id="hdk-EY-IkC"/>
+                        <outlet property="audioButtonTapped" destination="aTg-g2-Cpi" id="bCZ-ec-rS0"/>
                         <outlet property="category" destination="qmE-CF-EYz" id="tU0-8y-7xi"/>
                         <outlet property="currentScore" destination="dlc-SN-1pU" id="bGN-Gl-OpY"/>
                         <outlet property="heart1" destination="HQl-Rh-TbM" id="GVC-eG-TsJ"/>

@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "QuestionViewController.h"
-
 
 #define NSDEFAULT_KEY_SCORE     @"QuizMasterHighScore"
 
@@ -26,29 +24,22 @@
     
     // play Jeopardy Theme song
     
-    
     self.soundFilePath = [NSString stringWithFormat:@"%@/JeopardyTheme.mp3", [[NSBundle mainBundle] resourcePath]];
     NSURL *soundUrl = [NSURL fileURLWithPath:self.soundFilePath];
     
+    self.questionViewController.soundFilePath = self.soundFilePath;
+    
     self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     self.audioPlayer.numberOfLoops = -1;
+    
+    self.questionViewController.audioPlayer = self.audioPlayer;
+    
     [self.audioPlayer play];
     
 }
 
 - (IBAction)startGame:(UIButton *)sender {
-//    UIStoryboard *storyboard = self.storyboard;
-//    UIViewController *questionNAnswers = [storyboard instantiateViewControllerWithIdentifier:@"QuestionViewController"];
-//    [self presentViewController:questionNAnswers animated:true completion:nil];
-//    
-//    [self.navigationController
-//     pushViewController:questionNAnswers
-//     animated:YES];
-//    
-//    NSString * storyboardName = @"QuestionViewController";
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-//    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"QuestionViewController"];
-//    [self presentViewController:vc animated:YES completion:nil];
+    [self.audioPlayer stop];
 
 }
 
