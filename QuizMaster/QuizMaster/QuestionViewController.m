@@ -35,6 +35,12 @@
 
 -(void)didFinishLoadingQuestion {
     self.currentScore.text = [NSString stringWithFormat:@"$%ld", (long)_gameEngine.questionValue];
+    self.category.text = _gameEngine.categoryName;
+    self.question.text = _gameEngine.question;
+    self.answer1.text = _gameEngine.answerChoice1;
+    self.answer2.text = _gameEngine.answerChoice2;
+    self.answer3.text = _gameEngine.answerChoice3;
+    self.answer4.text = _gameEngine.answerChoice4;
 }
 
 - (IBAction)endGame:(id)sender {

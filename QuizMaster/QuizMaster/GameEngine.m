@@ -40,7 +40,7 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
         // Get the saved color settings
         self.highScore = [defaults integerForKey:NSDEFAULT_KEY_SCORE];
 #endif
-        
+        _ag = [[AnswerGenerator alloc] init];
         _ag.delegate = self;
     }
 
