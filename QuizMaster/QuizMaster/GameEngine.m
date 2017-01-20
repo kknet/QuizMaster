@@ -106,28 +106,46 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
 //////////////////////////////////////////////////////////////////////////////////////////
 - (void)didFinishLoadingJSON:(NSDictionary *)questionAndAnwers
 {
+    // Get the list of questions
+    NSArray *questions = questionAndAnwers[@"clues"];
+    NSInteger questionCount = [questions count];
+
+    // If there is less than 4 questions then ...
+    if (questionCount < 4)
+    {
+        // discard this batch and try again.
+        [self loadQuestion];
+        return;
+    }
+        
     NSString *choices[MAX_CHOICES];
+    NSDictionary *clue;
+    
+    // Extract the category name.
+    self.categoryName = questionAndAnwers[@"title"];
     
     // Generate a random location for the correct answer
     _correctAnswer = arc4random_uniform(MAX_CHOICES);
     
-    //
-    self.categoryName = questionAndAnwers[@"title"];
-    NSArray *questions = questionAndAnwers[@"clues"];
-    NSDictionary *clue;
-
     // Generate numbers to select 4 random questions
-    NSInteger questionCount = [questions count];
     NSInteger *indexes = [self get4UniqueNumber:questionCount];
-
+    
+    // Extract the randomly selected question "record"
     clue = questions[indexes[0]];
+    
+    // Extract the question
     self.question = clue[@"question"];
+    
+    // Extract the question value
     NSNumber *temp = clue[@"value"];
     self.questionValue = [temp integerValue];
+    
+    // Extract the answer
     choices[_correctAnswer] = clue[@"answer"];
 
     NSInteger currentIndex = 1;
     
+    // Extract 3 random answers
     for (int i = 0; i < MAX_CHOICES; ++i)
     {
         if (i == _correctAnswer)
@@ -137,6 +155,7 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
         choices[i] = clue[@"answer"];
     }
 
+    // Load all the answers
     self.answerChoice1 = choices[0];
     self.answerChoice2 = choices[1];
     self.answerChoice3 = choices[2];
