@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -301,29 +301,6 @@
                                     <constraint firstAttribute="width" secondItem="20e-zI-IVk" secondAttribute="height" multiplier="7:6" id="sLc-0c-Gxk"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDV-oD-lo3" userLabel="endGameButton">
-                                <rect key="frame" x="86" y="623.5" width="203" height="35.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-Q3-BCi">
-                                        <rect key="frame" x="8" y="8" width="187" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="End Game">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="endGame:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="TeN-6v-fxd"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.4941176471" green="0.098039215690000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="EDV-oD-lo3" secondAttribute="height" multiplier="205:36" id="3Kh-CA-xam"/>
-                                    <constraint firstItem="7Iq-Q3-BCi" firstAttribute="top" secondItem="EDV-oD-lo3" secondAttribute="top" constant="8" id="QNK-QG-fsK"/>
-                                    <constraint firstAttribute="bottom" secondItem="7Iq-Q3-BCi" secondAttribute="bottom" constant="8" id="TdE-s9-9h4"/>
-                                    <constraint firstAttribute="trailing" secondItem="7Iq-Q3-BCi" secondAttribute="trailing" constant="8" id="Wq8-KH-LFu"/>
-                                    <constraint firstItem="7Iq-Q3-BCi" firstAttribute="leading" secondItem="EDV-oD-lo3" secondAttribute="leading" constant="8" id="m4x-L4-kra"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For $800..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hg-Vw-2wL">
                                 <rect key="frame" x="121" y="146" width="133" height="21"/>
                                 <constraints>
@@ -333,18 +310,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-Q3-BCi">
+                                <rect key="frame" x="94" y="624" width="187" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="End Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="endGame:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="TeN-6v-fxd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.058823529411764705" green="0.53725490196078429" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Iq-Q3-BCi" secondAttribute="trailing" constant="94" id="1gQ-Bv-V5X"/>
                             <constraint firstItem="QDk-B0-8iI" firstAttribute="trailing" secondItem="ggG-0Y-4Cc" secondAttribute="trailingMargin" id="4xr-Ua-fcX"/>
-                            <constraint firstItem="EDV-oD-lo3" firstAttribute="leading" secondItem="ggG-0Y-4Cc" secondAttribute="leadingMargin" constant="70" id="6Tu-kQ-9p9"/>
+                            <constraint firstAttribute="bottom" secondItem="7Iq-Q3-BCi" secondAttribute="bottom" constant="23.5" id="A4M-wH-5W9"/>
                             <constraint firstItem="6Hg-Vw-2wL" firstAttribute="top" secondItem="Cbw-9V-Riv" secondAttribute="bottom" constant="23" id="Idg-it-bCX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="EDV-oD-lo3" secondAttribute="trailing" constant="70" id="Jyd-SK-uZB"/>
                             <constraint firstItem="Cbw-9V-Riv" firstAttribute="leading" secondItem="ggG-0Y-4Cc" secondAttribute="leading" id="Olh-2b-lvf"/>
                             <constraint firstItem="20e-zI-IVk" firstAttribute="leading" secondItem="ggG-0Y-4Cc" secondAttribute="leadingMargin" id="Qr8-nF-zNI"/>
-                            <constraint firstItem="44G-xy-p3l" firstAttribute="top" secondItem="EDV-oD-lo3" secondAttribute="bottom" constant="8" id="WC7-e0-fMM"/>
                             <constraint firstItem="20e-zI-IVk" firstAttribute="centerX" secondItem="ggG-0Y-4Cc" secondAttribute="centerX" id="YmG-4k-Rb0"/>
                             <constraint firstItem="20e-zI-IVk" firstAttribute="top" secondItem="QDk-B0-8iI" secondAttribute="bottom" constant="1" id="apj-8x-Si3"/>
+                            <constraint firstItem="7Iq-Q3-BCi" firstAttribute="leading" secondItem="ggG-0Y-4Cc" secondAttribute="leading" constant="94" id="ehS-NU-11Y"/>
                             <constraint firstItem="Q79-R9-JhH" firstAttribute="leading" secondItem="ggG-0Y-4Cc" secondAttribute="leading" id="g09-9H-TKw"/>
                             <constraint firstItem="Cbw-9V-Riv" firstAttribute="top" secondItem="Q79-R9-JhH" secondAttribute="bottom" id="g0N-yX-cPh"/>
                             <constraint firstItem="QDk-B0-8iI" firstAttribute="top" secondItem="6Hg-Vw-2wL" secondAttribute="bottom" constant="8" id="hEH-Qn-Vjv"/>
@@ -353,6 +340,7 @@
                             <constraint firstItem="Q79-R9-JhH" firstAttribute="top" secondItem="ggG-0Y-4Cc" secondAttribute="top" id="nNJ-Wc-XEg"/>
                             <constraint firstItem="Cbw-9V-Riv" firstAttribute="centerX" secondItem="ggG-0Y-4Cc" secondAttribute="centerX" id="nXf-aP-7C7"/>
                             <constraint firstAttribute="trailing" secondItem="Q79-R9-JhH" secondAttribute="trailing" id="r2t-2I-akr"/>
+                            <constraint firstItem="7Iq-Q3-BCi" firstAttribute="top" secondItem="ggG-0Y-4Cc" secondAttribute="top" constant="624" id="rph-RM-Wmn"/>
                             <constraint firstItem="6Hg-Vw-2wL" firstAttribute="leading" secondItem="ggG-0Y-4Cc" secondAttribute="leadingMargin" constant="105" id="xsH-eX-tU5"/>
                             <constraint firstItem="20e-zI-IVk" firstAttribute="trailing" secondItem="ggG-0Y-4Cc" secondAttribute="trailingMargin" id="yaw-kV-OVo"/>
                         </constraints>
@@ -364,7 +352,6 @@
                         <outlet property="answer4" destination="IUf-C7-z6T" id="hdk-EY-IkC"/>
                         <outlet property="category" destination="qmE-CF-EYz" id="tU0-8y-7xi"/>
                         <outlet property="currentScore" destination="dlc-SN-1pU" id="bGN-Gl-OpY"/>
-                        <outlet property="endGame" destination="EDV-oD-lo3" id="MZv-V3-Iw2"/>
                         <outlet property="heart1" destination="HQl-Rh-TbM" id="GVC-eG-TsJ"/>
                         <outlet property="heart2" destination="jH5-MV-4o6" id="pY7-bW-YG5"/>
                         <outlet property="heart3" destination="Jq8-zw-IRq" id="JPS-ho-QDp"/>
