@@ -21,10 +21,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *currentScore;
 @property (weak, nonatomic) IBOutlet UILabel *category;
 @property (weak, nonatomic) IBOutlet UILabel *question;
-@property (weak, nonatomic) IBOutlet UILabel *answer1;
-@property (weak, nonatomic) IBOutlet UILabel *answer2;
-@property (weak, nonatomic) IBOutlet UILabel *answer3;
-@property (weak, nonatomic) IBOutlet UILabel *answer4;
+
+- (IBAction)answer1:(id)sender;
+- (IBAction)answer2:(id)sender;
+- (IBAction)answer3:(id)sender;
+- (IBAction)answer4:(id)sender;
+
+
 @property (weak, nonatomic) IBOutlet UIImageView *heart1;
 @property (weak, nonatomic) IBOutlet UIImageView *heart2;
 @property (weak, nonatomic) IBOutlet UIImageView *heart3;
