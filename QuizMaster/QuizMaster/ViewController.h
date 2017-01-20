@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *highScoreDisplay;
 @property (weak, nonatomic) IBOutlet QuestionViewController *questionViewController;
 
+@property (strong) AVAudioPlayer *audioPlayer;
+@property (strong, nonatomic) NSString *soundFilePath;
 
 @end
 

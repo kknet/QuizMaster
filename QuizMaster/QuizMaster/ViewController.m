@@ -24,22 +24,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Get the stored high score
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSInteger savedScore = [defaults integerForKey:NSDEFAULT_KEY_SCORE];
+    // play Jeopardy Theme song
     
-    // Format the high score
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-    NSString *groupingSeparator = [[NSLocale currentLocale] objectForKey:NSLocaleGroupingSeparator];
-    [formatter setGroupingSeparator:groupingSeparator];
-    [formatter setGroupingSize:3];
-    [formatter setUsesGroupingSeparator:YES];
-    [formatter setMaximumFractionDigits:0];
-    NSString *formattedString = [formatter stringFromNumber:[NSNumber numberWithInteger:savedScore]];
-                                 
-    // Display the high score
-    self.highScoreDisplay.text = formattedString;
+    
+    self.soundFilePath = [NSString stringWithFormat:@"%@/JeopardyTheme.mp3", [[NSBundle mainBundle] resourcePath]];
+    NSURL *soundUrl = [NSURL fileURLWithPath:self.soundFilePath];
+    
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    self.audioPlayer.numberOfLoops = -1;
+    [self.audioPlayer play];
+    
 }
 
 - (IBAction)startGame:(UIButton *)sender {
