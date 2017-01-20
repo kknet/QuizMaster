@@ -22,11 +22,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *category;
 @property (weak, nonatomic) IBOutlet UILabel *question;
 
-- (IBAction)answer1:(id)sender;
-- (IBAction)answer2:(id)sender;
-- (IBAction)answer3:(id)sender;
-- (IBAction)answer4:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *answer1;
 @property (weak, nonatomic) IBOutlet UIButton *answer2;
 @property (weak, nonatomic) IBOutlet UIButton *answer3;
@@ -38,5 +33,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionValueLabel;
 
 - (IBAction)endGame:(id)sender;
+- (IBAction)answerButtonTouched:(UIButton *)sender;
+
 
 @end

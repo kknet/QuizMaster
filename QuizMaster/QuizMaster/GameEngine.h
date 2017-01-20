@@ -11,6 +11,9 @@
 #import "AnswerGenerator.h"
 
 
+#define NSDEFAULT_KEY_SCORE     @"QuizMasterHighScore"
+
+
 @class GameEngine;
 
 

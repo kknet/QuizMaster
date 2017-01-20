@@ -8,13 +8,6 @@
 
 #import "QuestionViewController.h"
 
-#if 0
-@interface QuestionViewController ()
-
-@property (strong, nonatomic) GameEngine *gameEngine;
-
-@end
-#endif
 
 @implementation QuestionViewController
 {
@@ -70,17 +63,103 @@
     [self.answer4 setTitle:_gameEngine.answerChoice4 forState:UIControlStateNormal];
 }
 
-- (IBAction)endGame:(id)sender {
-}
-- (IBAction)answer1:(id)sender {
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Method is called when End Game button is touched.
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+- (IBAction)endGame:(id)sender
+{
+    // Save the user's score
+    [_gameEngine saveScore];
+    
+    // If the audio is on then ...
+    if (self.soundON)
+        // shut it down.
+        [self.audioPlayer stop];
+
+    // Unwind back
+    [self performSegueWithIdentifier:@"unwindBackToViewController" sender:self];
 }
 
-- (IBAction)answer2:(id)sender {
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Method is called when one of the four answer button is touched.
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+- (IBAction)answerButtonTouched:(UIButton *)sender
+{
+    NSString *msg;
+    
+    // Initialize next step - to load the next question
+    void (^nextStep)(UIAlertAction *) = ^(UIAlertAction * action)
+                                        {
+                                            [_gameEngine loadQuestion];
+                                        };
+
+    // If the correct button was pressed then ...
+    if ([_gameEngine isAnswerCorrect:sender.tag])
+        // Display a success message
+        msg = @"You are correct!";
+
+    // Otherwise, ...
+    else
+    {
+        // Display a failure message
+        msg = @"Sorry, but you are wrong!";
+        
+        // If the first heart is still visible then ...
+        if (NO == self.heart1.hidden)
+            // remove it
+            self.heart1.hidden = YES;
+        
+        // Otherwise, if the second heart is still visible then ...
+        else if (NO == self.heart2.hidden)
+            // remove it
+            self.heart2.hidden = YES;
+        
+        // Otherwise, ...
+        else
+        {
+            // No point in removing the third heart, because the game is over.
+            
+            // Display an alternate failure message.
+            msg = @"Sorry, you are wrong and the game is over.";
+            
+            // Change the next step - to exit this screen
+            nextStep = ^(UIAlertAction * action)
+                       {
+                           // Unwind bacck
+                           [self performSegueWithIdentifier:@"unwindBackToViewController" sender:self];
+                       };
+            
+            // Save the user's score
+            [_gameEngine saveScore];
+            
+            // If the audio is on then ...
+            if (self.soundON)
+                // shut it down.
+                [self.audioPlayer stop];
+        }
+        
+    }
+    
+    // Initialize the controller for displaying the message
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Result"
+                                                                    message:msg
+                                                             preferredStyle:UIAlertControllerStyleAlert];
+    
+    // Create an OK button and associate the nextStep block with it
+    UIAlertAction* okButton = [UIAlertAction actionWithTitle:@"OK"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:nextStep];
+    
+    // Add the button to the controller
+    [alert addAction:okButton];
+    
+    // Display the alert controller
+    [self presentViewController:alert animated:YES completion:nil];
+
 }
 
-- (IBAction)answer3:(id)sender {
-}
-
-- (IBAction)answer4:(id)sender {
-}
 @end

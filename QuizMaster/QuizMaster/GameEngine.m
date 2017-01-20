@@ -21,9 +21,6 @@ const NSInteger MAX_QUESTIONS = 100;
     AnswerGenerator *_ag;
 }
 
-// Private constants
-NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
-
 //////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Initializer for GameEngine

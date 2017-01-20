@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -211,6 +211,9 @@
                                                 <state key="normal" title="Sample Answer 1">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="answerButtonTouched:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="n4r-Nq-Pce"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.65098039215686276" green="0.20392156862745098" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
@@ -230,14 +233,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTD-gh-CQq" userLabel="answer2View">
                                         <rect key="frame" x="0.0" y="91" width="343" height="51"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8j-B3-f4m">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8j-B3-f4m">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Sample Answer 2">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="answer2:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="Cbm-9p-vwU"/>
+                                                    <action selector="answerButtonTouched:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="hJ2-Op-Pcq"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -258,14 +261,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjG-Qz-wkY" userLabel="answer3View">
                                         <rect key="frame" x="0.0" y="162" width="343" height="51"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgH-gi-NMF">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgH-gi-NMF">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Sample Answer 3">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="answer3:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="mQE-tW-Adx"/>
+                                                    <action selector="answerButtonTouched:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="j9f-RY-7kl"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -286,14 +289,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvH-Li-doB" userLabel="answer4View">
                                         <rect key="frame" x="0.0" y="233" width="343" height="51"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqW-7b-TAj">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqW-7b-TAj">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Sample Answer 4">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="answer4:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="ON2-mF-meZ"/>
+                                                    <action selector="answerButtonTouched:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="WVK-E5-nbS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -391,9 +394,11 @@
                         <outlet property="heart3" destination="Jq8-zw-IRq" id="JPS-ho-QDp"/>
                         <outlet property="question" destination="QDk-B0-8iI" id="8fi-z9-86g"/>
                         <outlet property="questionValueLabel" destination="6Hg-Vw-2wL" id="cpx-1g-7gn"/>
+                        <segue destination="hdw-SR-vYp" kind="unwind" identifier="unwindBackToViewController" unwindAction="unwindFromQuestionViewController:" id="sjL-GS-3iQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klw-N3-e3v" sceneMemberID="firstResponder"/>
+                <exit id="hdw-SR-vYp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="917.60000000000002" y="122.78860569715144"/>
         </scene>

@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 
-#define NSDEFAULT_KEY_SCORE     @"QuizMasterHighScore"
-
 
 @interface ViewController ()
 
@@ -36,6 +34,7 @@
     
     [self.audioPlayer play];
     
+    [self displayHighScore];
 }
 
 - (IBAction)startGame:(UIButton *)sender {
@@ -43,5 +42,38 @@
 
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Method to display the high score stored in NSUserDefaults.
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+- (void)displayHighScore
+{
+    // Get the stored high score
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger savedScore = [defaults integerForKey:NSDEFAULT_KEY_SCORE];
+    
+    // Format the high score
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    formatter.numberStyle = NSNumberFormatterCurrencyStyle;
+    formatter.groupingSeparator = [[NSLocale currentLocale] objectForKey:NSLocaleGroupingSeparator];
+    formatter.groupingSize = 3;
+    formatter.usesGroupingSeparator = YES;
+    formatter.maximumFractionDigits = 0;
+    NSString *formattedString = [formatter stringFromNumber:[NSNumber numberWithInteger:savedScore]];
+    
+    // Display the high score
+    self.highScoreDisplay.text = formattedString;
+}
 
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Method is called when returning from QuestionViewController.
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+- (IBAction)unwindFromQuestionViewController:(UIStoryboardSegue *)segue
+{
+    // Update the high score display
+    [self displayHighScore];
+}
 @end
