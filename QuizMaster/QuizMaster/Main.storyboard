@@ -67,6 +67,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0U-MC-4VJ"/>
+                                    <segue destination="ZmG-gp-zYb" kind="presentation" id="yqk-1t-IRR"/>
                                 </connections>
                             </button>
                         </subviews>
