@@ -143,7 +143,7 @@
                                             <constraint firstItem="Jq8-zw-IRq" firstAttribute="top" secondItem="yVN-rh-DLq" secondAttribute="top" constant="10" id="z8g-qW-X6Y"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-MM-sEe" userLabel="volumeButton">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audioON-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-MM-sEe" userLabel="volumeButton">
                                         <rect key="frame" x="8" y="18" width="27" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ubz-MM-sEe" secondAttribute="height" multiplier="1:1" id="9cd-fa-dKG"/>
@@ -311,11 +311,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-Q3-BCi">
-                                <rect key="frame" x="94" y="624" width="187" height="19.5"/>
+                                <rect key="frame" x="94" y="608.5" width="187" height="35"/>
+                                <color key="backgroundColor" red="0.4941176471" green="0.098039215690000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="End Game">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="endGame:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="TeN-6v-fxd"/>
                                 </connections>
@@ -339,8 +343,8 @@
                             <constraint firstItem="QDk-B0-8iI" firstAttribute="leading" secondItem="ggG-0Y-4Cc" secondAttribute="leadingMargin" id="nDN-hJ-gYF"/>
                             <constraint firstItem="Q79-R9-JhH" firstAttribute="top" secondItem="ggG-0Y-4Cc" secondAttribute="top" id="nNJ-Wc-XEg"/>
                             <constraint firstItem="Cbw-9V-Riv" firstAttribute="centerX" secondItem="ggG-0Y-4Cc" secondAttribute="centerX" id="nXf-aP-7C7"/>
+                            <constraint firstItem="7Iq-Q3-BCi" firstAttribute="top" secondItem="20e-zI-IVk" secondAttribute="bottom" constant="6.5" id="oKL-SW-UmD"/>
                             <constraint firstAttribute="trailing" secondItem="Q79-R9-JhH" secondAttribute="trailing" id="r2t-2I-akr"/>
-                            <constraint firstItem="7Iq-Q3-BCi" firstAttribute="top" secondItem="ggG-0Y-4Cc" secondAttribute="top" constant="624" id="rph-RM-Wmn"/>
                             <constraint firstItem="6Hg-Vw-2wL" firstAttribute="leading" secondItem="ggG-0Y-4Cc" secondAttribute="leadingMargin" constant="105" id="xsH-eX-tU5"/>
                             <constraint firstItem="20e-zI-IVk" firstAttribute="trailing" secondItem="ggG-0Y-4Cc" secondAttribute="trailingMargin" id="yaw-kV-OVo"/>
                         </constraints>
@@ -365,6 +369,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="audioON-icon.png" width="45" height="45"/>
         <image name="heart2" width="600" height="582"/>
         <image name="jeopardyBkg2.jpg" width="500" height="500"/>
     </resources>
