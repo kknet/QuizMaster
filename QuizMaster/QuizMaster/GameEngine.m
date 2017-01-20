@@ -40,7 +40,7 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
         // Get the saved color settings
         self.highScore = [defaults integerForKey:NSDEFAULT_KEY_SCORE];
 #endif
-        
+        _ag = [[AnswerGenerator alloc] init];
         _ag.delegate = self;
     }
 
@@ -122,7 +122,8 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
 
     clue = questions[indexes[0]];
     self.question = clue[@"question"];
-    self.questionValue = clue[@"value"];
+    NSNumber *temp = clue[@"value"];
+    self.questionValue = [temp integerValue];
     choices[_correctAnswer] = clue[@"answer"];
 
     NSInteger currentIndex = 1;
