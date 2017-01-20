@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "GameEngine.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *highScoreDisplay;
 
+@property (strong) AVAudioPlayer *audioPlayer;
+@property (strong, nonatomic) NSString *soundFilePath;
 
 @end
 
