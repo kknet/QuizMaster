@@ -211,9 +211,6 @@
                                                 <state key="normal" title="Sample Answer 1">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="answer1:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="RYb-oe-Wqc"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.65098039215686276" green="0.20392156862745098" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
@@ -382,6 +379,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="answer1" destination="bwy-fB-Y5z" id="1At-vi-E9A"/>
+                        <outlet property="answer2" destination="B8j-B3-f4m" id="Umm-Zf-IvI"/>
+                        <outlet property="answer3" destination="CgH-gi-NMF" id="vDn-ym-fjG"/>
+                        <outlet property="answer4" destination="YqW-7b-TAj" id="aqH-2j-MZk"/>
                         <outlet property="audioButtonTapped" destination="aTg-g2-Cpi" id="bCZ-ec-rS0"/>
                         <outlet property="category" destination="qmE-CF-EYz" id="tU0-8y-7xi"/>
                         <outlet property="currentScore" destination="dlc-SN-1pU" id="bGN-Gl-OpY"/>

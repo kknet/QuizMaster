@@ -62,10 +62,18 @@
     self.currentScore.text = [NSString stringWithFormat:@"$%ld", (long)_gameEngine.questionValue];
     self.category.text = _gameEngine.categoryName;
     self.question.text = _gameEngine.question;
-    self.answer1.text = _gameEngine.answerChoice1;
-    self.answer2.text = _gameEngine.answerChoice2;
-    self.answer3.text = _gameEngine.answerChoice3;
-    self.answer4.text = _gameEngine.answerChoice4;
+    
+    [self.answer1 setTitle:_gameEngine.answerChoice1 forState:UIControlStateNormal];
+    [self.answer2 setTitle:_gameEngine.answerChoice2 forState:UIControlStateNormal];
+    [self.answer3 setTitle:_gameEngine.answerChoice3 forState:UIControlStateNormal];
+    [self.answer4 setTitle:_gameEngine.answerChoice4 forState:UIControlStateNormal];
+
+
+    
+//    self.answer1.titleLabel.text = _gameEngine.answerChoice1;
+//    self.answer2.titleLabel = _gameEngine.answerChoice2;
+//    self.answer3.text = _gameEngine.answerChoice3;
+//    self.answer4.text = _gameEngine.answerChoice4;
 }
 
 - (IBAction)endGame:(id)sender {

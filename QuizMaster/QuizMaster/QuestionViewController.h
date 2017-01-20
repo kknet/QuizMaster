@@ -27,6 +27,10 @@
 - (IBAction)answer3:(id)sender;
 - (IBAction)answer4:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *answer1;
+@property (weak, nonatomic) IBOutlet UIButton *answer2;
+@property (weak, nonatomic) IBOutlet UIButton *answer3;
+@property (weak, nonatomic) IBOutlet UIButton *answer4;
 
 @property (weak, nonatomic) IBOutlet UIImageView *heart1;
 @property (weak, nonatomic) IBOutlet UIImageView *heart2;
