@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -149,7 +149,7 @@
                                             <constraint firstAttribute="width" secondItem="dlc-SN-1pU" secondAttribute="height" multiplier="3:1" id="mWA-9j-a9E"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTg-g2-Cpi">
@@ -205,23 +205,24 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-hH-mol" userLabel="answer1View">
                                         <rect key="frame" x="0.0" y="20" width="343" height="51"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Answer 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sy-bR-R4V" userLabel="answer1">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwy-fB-Y5z">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="6sy-bR-R4V" secondAttribute="height" multiplier="327:35" id="pYz-Ro-rLI"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Sample Answer 1">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answer1:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="RYb-oe-Wqc"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.65098039215686276" green="0.20392156862745098" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Fur-hH-mol" secondAttribute="height" multiplier="343:51" id="3W0-tR-V2A"/>
-                                            <constraint firstItem="6sy-bR-R4V" firstAttribute="leading" secondItem="Fur-hH-mol" secondAttribute="leading" constant="8" id="982-Sk-Lej"/>
-                                            <constraint firstAttribute="bottom" secondItem="6sy-bR-R4V" secondAttribute="bottom" constant="8" id="UVa-ub-lu8"/>
-                                            <constraint firstAttribute="trailing" secondItem="6sy-bR-R4V" secondAttribute="trailing" constant="8" id="Zcv-wO-T1G"/>
-                                            <constraint firstItem="6sy-bR-R4V" firstAttribute="top" secondItem="Fur-hH-mol" secondAttribute="top" constant="8" id="tYk-b5-Ire"/>
+                                            <constraint firstAttribute="bottom" secondItem="bwy-fB-Y5z" secondAttribute="bottom" constant="8" id="9Uv-io-VqF"/>
+                                            <constraint firstAttribute="trailing" secondItem="bwy-fB-Y5z" secondAttribute="trailing" constant="8" id="PNe-nb-FbC"/>
+                                            <constraint firstItem="bwy-fB-Y5z" firstAttribute="leading" secondItem="Fur-hH-mol" secondAttribute="leading" constant="8" id="mDz-q1-OLg"/>
+                                            <constraint firstItem="bwy-fB-Y5z" firstAttribute="top" secondItem="Fur-hH-mol" secondAttribute="top" constant="8" id="yaI-Xh-4Og"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -232,20 +233,24 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTD-gh-CQq" userLabel="answer2View">
                                         <rect key="frame" x="0.0" y="91" width="343" height="51"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Answer 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJn-5h-ODt">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8j-B3-f4m">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Sample Answer 2">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answer2:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="Cbm-9p-vwU"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.65098039215686276" green="0.20392156862745098" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="MJn-5h-ODt" firstAttribute="top" secondItem="qTD-gh-CQq" secondAttribute="top" constant="8" id="3uP-hm-Jv3"/>
-                                            <constraint firstAttribute="trailing" secondItem="MJn-5h-ODt" secondAttribute="trailing" constant="8" id="8dB-ph-pD2"/>
-                                            <constraint firstItem="MJn-5h-ODt" firstAttribute="leading" secondItem="qTD-gh-CQq" secondAttribute="leading" constant="8" id="OwB-xi-pnG"/>
+                                            <constraint firstItem="B8j-B3-f4m" firstAttribute="leading" secondItem="qTD-gh-CQq" secondAttribute="leading" constant="8" id="QRX-kg-h35"/>
                                             <constraint firstAttribute="width" secondItem="qTD-gh-CQq" secondAttribute="height" multiplier="343:51" id="W7O-c8-e0w"/>
-                                            <constraint firstAttribute="bottom" secondItem="MJn-5h-ODt" secondAttribute="bottom" constant="8" id="yCx-on-OkJ"/>
+                                            <constraint firstItem="B8j-B3-f4m" firstAttribute="top" secondItem="qTD-gh-CQq" secondAttribute="top" constant="8" id="Y9G-Si-uCC"/>
+                                            <constraint firstAttribute="trailing" secondItem="B8j-B3-f4m" secondAttribute="trailing" constant="8" id="j9i-nd-8Bd"/>
+                                            <constraint firstAttribute="bottom" secondItem="B8j-B3-f4m" secondAttribute="bottom" constant="8" id="kJP-Tr-CKP"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -256,20 +261,24 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjG-Qz-wkY" userLabel="answer3View">
                                         <rect key="frame" x="0.0" y="162" width="343" height="51"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Answer 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jht-Ph-yFW">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgH-gi-NMF">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Sample Answer 3">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answer3:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="mQE-tW-Adx"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.65098039215686276" green="0.20392156862745098" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hjG-Qz-wkY" secondAttribute="height" multiplier="343:51" id="6MN-jF-68o"/>
-                                            <constraint firstAttribute="trailing" secondItem="jht-Ph-yFW" secondAttribute="trailing" constant="8" id="BlH-aR-8ky"/>
-                                            <constraint firstAttribute="bottom" secondItem="jht-Ph-yFW" secondAttribute="bottom" constant="8" id="Er6-FC-elZ"/>
-                                            <constraint firstItem="jht-Ph-yFW" firstAttribute="leading" secondItem="hjG-Qz-wkY" secondAttribute="leading" constant="8" id="LKn-55-12A"/>
-                                            <constraint firstItem="jht-Ph-yFW" firstAttribute="top" secondItem="hjG-Qz-wkY" secondAttribute="top" constant="8" id="eRO-AJ-OYS"/>
+                                            <constraint firstItem="CgH-gi-NMF" firstAttribute="top" secondItem="hjG-Qz-wkY" secondAttribute="top" constant="8" id="DRV-ah-JNY"/>
+                                            <constraint firstItem="CgH-gi-NMF" firstAttribute="leading" secondItem="hjG-Qz-wkY" secondAttribute="leading" constant="8" id="FAU-sd-ezu"/>
+                                            <constraint firstAttribute="bottom" secondItem="CgH-gi-NMF" secondAttribute="bottom" constant="8" id="Xk6-8B-bem"/>
+                                            <constraint firstAttribute="trailing" secondItem="CgH-gi-NMF" secondAttribute="trailing" constant="8" id="udn-22-QUn"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -280,20 +289,24 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvH-Li-doB" userLabel="answer4View">
                                         <rect key="frame" x="0.0" y="233" width="343" height="51"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Answer 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUf-C7-z6T">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqW-7b-TAj">
                                                 <rect key="frame" x="8" y="8" width="327" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Sample Answer 4">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answer4:" destination="ZmG-gp-zYb" eventType="touchUpInside" id="ON2-mF-meZ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.65098039215686276" green="0.20392156862745098" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="IUf-C7-z6T" firstAttribute="leading" secondItem="PvH-Li-doB" secondAttribute="leading" constant="8" id="6D7-hz-g6v"/>
                                             <constraint firstAttribute="width" secondItem="PvH-Li-doB" secondAttribute="height" multiplier="343:51" id="APg-qk-fLz"/>
-                                            <constraint firstAttribute="trailing" secondItem="IUf-C7-z6T" secondAttribute="trailing" constant="8" id="EAz-Zy-k63"/>
-                                            <constraint firstAttribute="bottom" secondItem="IUf-C7-z6T" secondAttribute="bottom" constant="8" id="Kl5-nG-aOQ"/>
-                                            <constraint firstItem="IUf-C7-z6T" firstAttribute="top" secondItem="PvH-Li-doB" secondAttribute="top" constant="8" id="SSq-5x-vHv"/>
+                                            <constraint firstAttribute="bottom" secondItem="YqW-7b-TAj" secondAttribute="bottom" constant="8" id="E7m-rT-cN7"/>
+                                            <constraint firstItem="YqW-7b-TAj" firstAttribute="top" secondItem="PvH-Li-doB" secondAttribute="top" constant="8" id="L3B-r5-EMk"/>
+                                            <constraint firstAttribute="trailing" secondItem="YqW-7b-TAj" secondAttribute="trailing" constant="8" id="LJ3-xD-HzQ"/>
+                                            <constraint firstItem="YqW-7b-TAj" firstAttribute="leading" secondItem="PvH-Li-doB" secondAttribute="leading" constant="8" id="t7P-xi-LHF"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -325,8 +338,8 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6Hg-Vw-2wL" secondAttribute="height" multiplier="19:3" constant="60.666666666666686" id="oJr-Xv-PoD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-Q3-BCi">
@@ -369,10 +382,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="answer1" destination="6sy-bR-R4V" id="cwF-rK-TKV"/>
-                        <outlet property="answer2" destination="MJn-5h-ODt" id="gt0-WY-fR7"/>
-                        <outlet property="answer3" destination="jht-Ph-yFW" id="CgI-Sa-IyU"/>
-                        <outlet property="answer4" destination="IUf-C7-z6T" id="hdk-EY-IkC"/>
                         <outlet property="audioButtonTapped" destination="aTg-g2-Cpi" id="bCZ-ec-rS0"/>
                         <outlet property="category" destination="qmE-CF-EYz" id="tU0-8y-7xi"/>
                         <outlet property="currentScore" destination="dlc-SN-1pU" id="bGN-Gl-OpY"/>

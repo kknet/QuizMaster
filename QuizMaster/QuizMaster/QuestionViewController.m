@@ -70,4 +70,15 @@
 
 - (IBAction)endGame:(id)sender {
 }
+- (IBAction)answer1:(id)sender {
+}
+
+- (IBAction)answer2:(id)sender {
+}
+
+- (IBAction)answer3:(id)sender {
+}
+
+- (IBAction)answer4:(id)sender {
+}
 @end
