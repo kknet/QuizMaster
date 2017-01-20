@@ -224,6 +224,11 @@
                                             <constraint firstAttribute="trailing" secondItem="6sy-bR-R4V" secondAttribute="trailing" constant="8" id="Zcv-wO-T1G"/>
                                             <constraint firstItem="6sy-bR-R4V" firstAttribute="top" secondItem="Fur-hH-mol" secondAttribute="top" constant="8" id="tYk-b5-Ire"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTD-gh-CQq" userLabel="answer2View">
                                         <rect key="frame" x="0.0" y="91.5" width="343" height="51"/>
@@ -243,6 +248,11 @@
                                             <constraint firstAttribute="width" secondItem="qTD-gh-CQq" secondAttribute="height" multiplier="343:51" id="W7O-c8-e0w"/>
                                             <constraint firstAttribute="bottom" secondItem="MJn-5h-ODt" secondAttribute="bottom" constant="8" id="yCx-on-OkJ"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjG-Qz-wkY" userLabel="answer3View">
                                         <rect key="frame" x="0.0" y="163" width="343" height="51"/>
@@ -262,6 +272,11 @@
                                             <constraint firstItem="jht-Ph-yFW" firstAttribute="leading" secondItem="hjG-Qz-wkY" secondAttribute="leading" constant="8" id="LKn-55-12A"/>
                                             <constraint firstItem="jht-Ph-yFW" firstAttribute="top" secondItem="hjG-Qz-wkY" secondAttribute="top" constant="8" id="eRO-AJ-OYS"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvH-Li-doB" userLabel="answer4View">
                                         <rect key="frame" x="0.0" y="234.5" width="343" height="51"/>
@@ -281,6 +296,11 @@
                                             <constraint firstAttribute="bottom" secondItem="IUf-C7-z6T" secondAttribute="bottom" constant="8" id="Kl5-nG-aOQ"/>
                                             <constraint firstItem="IUf-C7-z6T" firstAttribute="top" secondItem="PvH-Li-doB" secondAttribute="top" constant="8" id="SSq-5x-vHv"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.53725490200000003" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -312,7 +332,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-Q3-BCi">
                                 <rect key="frame" x="94" y="608.5" width="187" height="35"/>
-                                <color key="backgroundColor" red="0.4941176471" green="0.098039215690000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="End Game">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
