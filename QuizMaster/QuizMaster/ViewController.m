@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "QuestionViewController.h"
 
 
 #define NSDEFAULT_KEY_SCORE     @"QuizMasterHighScore"
@@ -42,9 +43,19 @@
 }
 
 - (IBAction)startGame:(UIButton *)sender {
-    UIStoryboard *storyboard = self.storyboard;
-    UIViewController *questionNAnswers = [storyboard instantiateViewControllerWithIdentifier:@"QuestionViewController"];
-    [self presentViewController:questionNAnswers animated:true completion:nil];
+//    UIStoryboard *storyboard = self.storyboard;
+//    UIViewController *questionNAnswers = [storyboard instantiateViewControllerWithIdentifier:@"QuestionViewController"];
+//    [self presentViewController:questionNAnswers animated:true completion:nil];
+//    
+//    [self.navigationController
+//     pushViewController:questionNAnswers
+//     animated:YES];
+//    
+//    NSString * storyboardName = @"QuestionViewController";
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+//    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"QuestionViewController"];
+//    [self presentViewController:vc animated:YES completion:nil];
+
 }
 
 
