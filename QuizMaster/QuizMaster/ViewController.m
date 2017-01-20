@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+
+#define NSDEFAULT_KEY_SCORE     @"QuizMasterHighScore"
+
+
 @interface ViewController ()
 
 //@property (strong, nonatomic)

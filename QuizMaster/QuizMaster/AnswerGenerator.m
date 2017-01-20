@@ -3,7 +3,7 @@
 @implementation AnswerGenerator
 
 - (void)GetRandomQuery:(NSInteger) category {
-    NSString *string = [[NSString alloc] initWithFormat:@"http://jservice.io/api/category?id=%@", category];
+    NSString *string = [[NSString alloc] initWithFormat:@"http://jservice.io/api/category?id=%ld", (long)category];
     NSURL *URL = [NSURL URLWithString:string];
     NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:URL];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
