@@ -174,18 +174,45 @@ NSString *const NSDEFAULT_KEY_SCORE = @"QuizMasterHighScore";
     Boolean duplicate[MAX_QUESTIONS];
     static NSInteger uniqueNumbers[MAX_CHOICES];
     NSInteger temp;
+    int i;
     
-    for (int i = 0; i < MAX_CHOICES; ++i)
+    memset(duplicate, 0, sizeof(duplicate));
+    
+    // if the number set is small then ...
+    if (maxNumber <= 2 * MAX_CHOICES)
     {
-        do
-        {
-            // Generate random number
-            temp = arc4random_uniform(maxNumber);
-        }
-        while (duplicate[temp]);
+        // use "coin flip" method
+        int count = 0;
         
-        duplicate[temp] = YES;
-        uniqueNumbers[i] = temp;
+        while (count < MAX_CHOICES)
+        {
+            for (i = 0; i < maxNumber; ++i)
+            {
+                if (duplicate[i])
+                    continue;
+                
+                if (arc4random_uniform(2))
+                {
+                    duplicate[i] = YES;
+                    uniqueNumbers[count++] = i;
+                }
+            }
+        }
+    }
+    else
+    {
+        for (i = 0; i < MAX_CHOICES; ++i)
+        {
+            do
+            {
+                // Generate random number
+                temp = arc4random_uniform(maxNumber);
+            }
+            while (duplicate[temp]);
+            
+            duplicate[temp] = YES;
+            uniqueNumbers[i] = temp;
+        }
     }
     
     return uniqueNumbers;
